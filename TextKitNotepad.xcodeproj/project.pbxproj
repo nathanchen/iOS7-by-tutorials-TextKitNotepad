@@ -14,6 +14,9 @@
 		C5E2CF251ABA96B00087C430 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E2CF241ABA96B00087C430 /* Images.xcassets */; };
 		C5E2CF281ABA96B00087C430 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E2CF261ABA96B00087C430 /* LaunchScreen.xib */; };
 		C5E2CF341ABA96B00087C430 /* TextKitNotepadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF331ABA96B00087C430 /* TextKitNotepadTests.m */; };
+		C5E2CF3F1ABA992D0087C430 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF3E1ABA992D0087C430 /* Note.m */; };
+		C5E2CF421ABA9C7C0087C430 /* NotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF411ABA9C7C0087C430 /* NotesListViewController.m */; };
+		C5E2CF451ABAA6320087C430 /* NoteEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF441ABAA6320087C430 /* NoteEditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		C5E2CF2D1ABA96B00087C430 /* TextKitNotepadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextKitNotepadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E2CF321ABA96B00087C430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5E2CF331ABA96B00087C430 /* TextKitNotepadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitNotepadTests.m; sourceTree = "<group>"; };
+		C5E2CF3D1ABA992D0087C430 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		C5E2CF3E1ABA992D0087C430 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		C5E2CF401ABA9C7C0087C430 /* NotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesListViewController.h; sourceTree = "<group>"; };
+		C5E2CF411ABA9C7C0087C430 /* NotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesListViewController.m; sourceTree = "<group>"; };
+		C5E2CF431ABAA6320087C430 /* NoteEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteEditorViewController.h; sourceTree = "<group>"; };
+		C5E2CF441ABAA6320087C430 /* NoteEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteEditorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				C5E2CF241ABA96B00087C430 /* Images.xcassets */,
 				C5E2CF261ABA96B00087C430 /* LaunchScreen.xib */,
 				C5E2CF171ABA96B00087C430 /* Supporting Files */,
+				C5E2CF3D1ABA992D0087C430 /* Note.h */,
+				C5E2CF3E1ABA992D0087C430 /* Note.m */,
+				C5E2CF401ABA9C7C0087C430 /* NotesListViewController.h */,
+				C5E2CF411ABA9C7C0087C430 /* NotesListViewController.m */,
+				C5E2CF431ABAA6320087C430 /* NoteEditorViewController.h */,
+				C5E2CF441ABAA6320087C430 /* NoteEditorViewController.m */,
 			);
 			path = TextKitNotepad;
 			sourceTree = "<group>";
@@ -222,6 +237,9 @@
 				C5E2CF201ABA96B00087C430 /* ViewController.m in Sources */,
 				C5E2CF1D1ABA96B00087C430 /* AppDelegate.m in Sources */,
 				C5E2CF1A1ABA96B00087C430 /* main.m in Sources */,
+				C5E2CF421ABA9C7C0087C430 /* NotesListViewController.m in Sources */,
+				C5E2CF3F1ABA992D0087C430 /* Note.m in Sources */,
+				C5E2CF451ABAA6320087C430 /* NoteEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

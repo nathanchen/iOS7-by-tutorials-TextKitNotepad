@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Note.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,28 @@
 
 @implementation AppDelegate
 
+- (NSMutableArray *)notes
+{
+    return [[NSMutableArray alloc] initWithObjects:
+            [[Note alloc] initWithText:@"Shopping List\r\r1. Cheese\r2. Biscuits\r3. Sausages\r4. IMPORTANT Cash for going out!\r5. -potatoes-\r6. A copy of iOS6 by tutorials\r7. A new iPhone\r8. A present for mum"] ,
+            [[Note alloc] initWithText:@"Meeting notes\rA long and drawn out meeting, it lasted hours and hours and hours!"] ,
+            [[Note alloc] initWithText:@"Perfection ... \n\nPerfection is achieved not when there is nothing left to add, but when there is nothing left to take away - Antoine de Saint-Exupery"] ,
+            [[Note alloc] initWithText:@"Notes on iOS7\nThis is a big change in the UI design, it's going to take a *lot* of getting used to!"] ,
+            [[Note alloc] initWithText:@"Meeting notes\rA dfferent meeting, just as long and boring"] ,
+            [[Note alloc] initWithText:@"A collection of thoughts\rWhy do birds sing? Why is the sky blue? Why is it so hard to create good test data?"] ,nil];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIColor *navColor = [UIColor colorWithRed:0.175 green:0.458 blue:0.831 alpha:1];
+    [UINavigationBar appearance].barTintColor = navColor;
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].titleTextAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:NSForegroundColorAttributeName, [UIColor whiteColor], nil];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     return YES;
 }
 
